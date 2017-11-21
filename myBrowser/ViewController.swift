@@ -47,8 +47,6 @@ class ViewController: UIViewController {
         self.webView.load(request) // performo la richiesta
     }
     
-    
-    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if (webView.canGoForward==true){
