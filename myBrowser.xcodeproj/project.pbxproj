@@ -10,7 +10,7 @@
 		E5D6DED81FC417260086BF51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6DED71FC417260086BF51 /* AppDelegate.swift */; };
 		E5D6DEDA1FC417260086BF51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6DED91FC417260086BF51 /* ViewController.swift */; };
 		E5D6DEDD1FC417260086BF51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D6DEDB1FC417260086BF51 /* Main.storyboard */; };
-		E5D6DEE01FC417260086BF51 /* myBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5D6DEDE1FC417260086BF51 /* myBrowser.xcdatamodeld */; };
+		E5D6DEE01FC417260086BF51 /* webAppX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5D6DEDE1FC417260086BF51 /* webAppX.xcdatamodeld */; };
 		E5D6DEE21FC417260086BF51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D6DEE11FC417260086BF51 /* Assets.xcassets */; };
 		E5D6DEE51FC417260086BF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D6DEE31FC417260086BF51 /* LaunchScreen.storyboard */; };
 		E5D6DEF01FC417260086BF51 /* webAppXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6DEEF1FC417260086BF51 /* webAppXTests.swift */; };
@@ -39,7 +39,7 @@
 		E5D6DED71FC417260086BF51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D6DED91FC417260086BF51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5D6DEDC1FC417260086BF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5D6DEDF1FC417260086BF51 /*  */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; name = ""; sourceTree = "<group>"; };
+		E5D6DEDF1FC417260086BF51 /* webAppX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = webAppX; path = ../webAppX; sourceTree = "<group>"; };
 		E5D6DEE11FC417260086BF51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D6DEE41FC417260086BF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D6DEE61FC417260086BF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				E5D6DEE11FC417260086BF51 /* Assets.xcassets */,
 				E5D6DEE31FC417260086BF51 /* LaunchScreen.storyboard */,
 				E5D6DEE61FC417260086BF51 /* Info.plist */,
-				E5D6DEDE1FC417260086BF51 /* myBrowser.xcdatamodeld */,
+				E5D6DEDE1FC417260086BF51 /* webAppX.xcdatamodeld */,
 			);
 			path = myBrowser;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D6DEE01FC417260086BF51 /* myBrowser.xcdatamodeld in Sources */,
+				E5D6DEE01FC417260086BF51 /* webAppX.xcdatamodeld in Sources */,
 				E5D6DEDA1FC417260086BF51 /* ViewController.swift in Sources */,
 				E5D6DED81FC417260086BF51 /* AppDelegate.swift in Sources */,
 			);
@@ -558,13 +558,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E5D6DEDE1FC417260086BF51 /* myBrowser.xcdatamodeld */ = {
+		E5D6DEDE1FC417260086BF51 /* webAppX.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E5D6DEDF1FC417260086BF51 /*  */,
+				E5D6DEDF1FC417260086BF51 /* webAppX */,
 			);
-			currentVersion = E5D6DEDF1FC417260086BF51 /*  */;
-			path = myBrowser.xcdatamodeld;
+			currentVersion = E5D6DEDF1FC417260086BF51 /* webAppX */;
+			path = webAppX.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
