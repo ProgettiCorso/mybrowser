@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import myBrowser
+
 
 class webAppXTests: XCTestCase {
     
