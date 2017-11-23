@@ -11,6 +11,8 @@ import WebKit
 
 class ViewController: UIViewController {
     
+
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var forewardBtn: UIButton!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet var myView: UIView!
@@ -28,9 +30,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.webView = WKWebView(frame: self.view.frame)
         self.myView.addSubview(self.webView)
+        self.myView.addSubview(spinner)
         self.webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         self.loadURL("www.apple.it")
         webView.allowsBackForwardNavigationGestures = true
@@ -46,6 +49,7 @@ class ViewController: UIViewController {
         let request = URLRequest(url: url!) // creo la richiesta da far effettuare alla webview
         self.webView.load(request) // performo la richiesta
     }
+    
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
@@ -66,8 +70,16 @@ class ViewController: UIViewController {
         }
         
         if (keyPath == "estimatedProgress") {
-            myProgressView.isHidden = webView.estimatedProgress == 1
+            if(webView.estimatedProgress == 1)
+            {
+             myProgressView.progressTintColor = UIColor.darkGray
+            }
+            else
+            {
+                myProgressView.progressTintColor = UIColor.white
+            }
             myProgressView.setProgress(Float(webView.estimatedProgress), animated: true)
+            spinner.isHidden = true
         }
     }
 }
